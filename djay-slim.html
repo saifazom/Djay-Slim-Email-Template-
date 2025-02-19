@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>*|MC:SUBJECT|*</title>
+    <!--[if mso]>
+    <style>
+        table {border-collapse:collapse;border-spacing:0;border:none;margin:0;}
+        div, td {padding:0;}
+        div {margin:0 !important;}
+    </style>
+    <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style>
+        table, td, div, h1, p {
+            font-family: Arial, sans-serif;
+        }
+        img{
+            max-width: 100%;
+        }
+        /*
+            @tab Header
+            @section header style
+            @tip Set the background image & logo style for your email's header area.
+            @theme header
+        */
+        #templateHeader{
+            /*@editable*/background-image:url("https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/a3d9df6e-7197-4414-cf20-c48eaa6fdef7.jpg");
+            /*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+            /*@editable*/padding-top:40px; 
+            /*@editable*/padding-right:30px; 
+            /*@editable*/padding-bottom:75px; 
+            /*@editable*/padding-left:30px; 
+            /*@editable*/text-align: center;
+        }
+        /*
+            @tab Banner Date
+            @section Banner Date Section
+            @tip Set the text style for your email's banner date area.
+            @theme banner date
+        */
+        #date-banner div{
+            /*@editable*/color: #fff;
+            /*@editable*/font-size: 13px;
+            /*@editable*/line-height: 13px;
+            /*@editable*/font-weight: bold;
+        }
+        #date-banner a{
+            /*@editable*/color: #dfa323;
+            /*@editable*/font-size: 13px;
+            /*@editable*/line-height: 13px;
+            /*@editable*/font-weight: bold;
+            /*@editable*/text-decoration: none;
+        }
+        /*
+            @tab Intro Text
+            @section Intro Text Section
+            @tip Set the text style for your email's intro text area.
+            @theme intro text
+        */
+        #intro-text p{
+            margin: 0;
+            /*@editable*/color: #000;
+            /*@editable*/font-size: 16px;
+            /*@editable*/line-height: 20px;
+            /*@editable*/font-weight: normal;
+        }
+        /*
+            @tab Upcomming Shows
+            @section Upcomming Shows Section
+            @tip Set the text style for your email's upcomming shows area.
+            @theme upcomming shows text
+        */
+        #upcoming-shows__lists td{
+            /*@editable*/border-bottom: 1px solid #d1d6e4;
+            /*@editable*/color: #000;
+            /*@editable*/font-size: 15px;
+            /*@editable*/line-height: 19px;
+            /*@editable*/font-weight: bold;
+        }
+        #upcoming-shows__lists tr:last-child td{
+            border: none;
+        }
+        /*
+            @tab Mixes
+            @section Mixes Section
+            @tip Set the text style for your email's mixes area.
+            @theme mixes text
+        */
+        #mixes__items td div{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        #mixes h3{
+            /*@editable*/font-size: 15px;
+            /*@editable*/line-height: 19px;
+            /*@editable*/font-weight: bold;
+            /*@editable*/color: #000;
+            margin: 0;
+            /*@editable*/padding-top: 18px;
+            /*@editable*/padding-bottom: 25px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        /*
+            @tab Footer
+            @section Footer Section
+            @tip Set the text style for your email's footer area.
+            @theme footer text
+        */
+        #footer{
+            /*@editable*/border-top: 3px solid #000;
+            /*@editable*/padding-top: 35px;
+            /*@editable*/padding-bottom: 80px;
+            /*@editable*/padding-left: 40px;
+            /*@editable*/padding-right: 40px;
+            /*@editable*/text-align: center;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100% 100%;
+        }
+        .footer_social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+        .footer_social a{
+            margin-top: 0;
+            margin-bottom: 0;
+            /*@editable*/margin-left: 11px;
+            /*@editable*/margin-right: 11px;
+            display: inline-block;
+            /*@editable*/width: calc(8.3% - 20px);
+        }
+        .footer_social a:first-child{
+            margin-left: 0;
+        }
+        .footer_social a:last-child{
+            margin-right: 0;
+        }
+        .footer_social img{
+            object-fit: contain;
+            /*@editable*/width: 24px;
+            /*@editable*/height: 22px;
+        }
+        .footer_text{
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:18px;
+            /*@editable*/color: #fff;
+            /*@editable*/padding-top: 40px;
+        }
+        @media screen and (max-width: 530px) {
+            /*
+            @tab Mobile Styles
+            @section Header Section
+            @tip Make the date header content text larger in size for better readability on small screens.
+            */
+            #templateHeader{
+                /*@editable*/padding-top: 35px !important;
+                /*@editable*/padding-bottom: 40px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .templateHeader__logo{
+                /*@editable*/padding-bottom: 200px !important;
+            }
+            .templateHeader__logo img{
+                width: 110px !important;
+            }
+            .templateHeader__main-logo img{
+                width: 250px !important;
+            }
+            /*
+            @tab Mobile Styles
+            @section Date Banner Section
+            @tip Make the date banner content text larger in size for better readability on small screens.
+            */
+            #date-banner td{
+                /*@editable*/padding-top: 15px !important;
+                /*@editable*/padding-bottom: 15px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                /*@editable*/font-size: 10px !important;
+            }
+            #date-banner div{
+                /*@editable*/font-size: 10px !important;
+                /*@editable*/line-height: 10px !important;
+            }
+            #date-banner a{
+                /*@editable*/font-size: 10px !important;
+                /*@editable*/line-height: 10px !important;
+            }
+            #date-banner .date-banner__1{
+                padding-right: 10px !important ;
+            }
+            #date-banner .date-banner__2{
+                padding-left: 10px !important;
+            }
+            /*
+            @tab Mobile Styles
+            @section Intro Section
+            @tip Make the date intro content text larger in size for better readability on small screens.
+            */
+            #intro-text{
+                /*@editable*/padding-top: 35px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            #intro-text p {
+                /*@editable*/font-size: 14px !important;
+                /*@editable*/line-height: 18px !important;
+            }
+            /*
+            @tab Mobile Styles
+            @section Upcoming Showes
+            @tip Make the upcoming showes content text larger in size for better readability on small screens.
+            */
+            #upcoming-shows{
+                /*@editable*/padding-top: 30px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            #upcoming-shows__lists tr{
+                display: block !important;
+            }
+            #upcoming-shows__lists td {
+                /*@editable*/font-size: 12px !important;
+                /*@editable*/line-height: 16px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                /*@editable*/padding-top: 15px !important;
+                /*@editable*/padding-bottom: 15px !important;
+                border-bottom: none !important;
+            }
+            #upcoming-shows__lists td:first-child{
+                width: 65px !important;
+                padding-left: 5px !important;
+            }
+            #upcoming-shows__lists tr td:nth-child(3){
+                width: 138px !important;
+                padding-right: 5px !important;
+                text-align: right !important;
+            }
+            #upcoming-shows__lists tr td:last-child {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                display: block !important;
+                width: 100% !important;
+                border-bottom: 1px solid #d1d6e4 !important;
+            }
+            #upcoming-shows__lists td a{
+                /*@editable*/font-size: 12px !important;
+                /*@editable*/line-height: 16px !important;
+            }
+            /*
+            @tab Mobile Styles
+            @section Mixes Section
+            @tip Make the mixes content text larger in size for better readability on small screens.
+            */
+            #mixes{
+                /*@editable*/padding-bottom: 30px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            #mixes .mix-heading img{
+                width: 250px !important;
+            }
+            #mixes__items td div{
+                height: 129px !important;
+            }
+            #mixes__items td div a{
+                margin-top: 38px !important;
+            }
+            
+            #mixes h3{
+                /*@editable*/font-size: 12px !important;
+                /*@editable*/line-height: 16px !important;
+                /*@editable*/padding-top: 10px !important;
+                /*@editable*/padding-bottom: 20px !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            /*
+            @tab Mobile Styles
+            @section Footer Section
+            @tip Make the footer content text larger in size for better readability on small screens.
+            */
+            #footer{
+                /*@editable*/padding-top: 30px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .footer_social{
+                display: block !important;
+            }
+            .footer_social a {
+                /*@editable*/margin-top: 5px !important;
+                /*@editable*/margin-bottom: 5px !important;
+                /*@editable*/margin-left: 8px !important;
+                /*@editable*/margin-right: 8px !important;
+                /*@editable*/width: calc(14% - 16px) !important;
+            }
+            .footer_social a:first-child {
+                margin-left: 8px !important;
+            }
+            .footer_social a:last-child {
+                margin-right: 8px !important;
+            }
+            .footer_text{
+                /*@editable*/padding-top: 30px !important;
+                /*@editable*/font-size: 10px !important;
+                /*@editable*/line-height: 16px !important;
+            }
+            .footer_logo {
+                /*@editable*/margin-top: 35px !important;
+            }
+            .footer_logo a{
+                /*@editable*/font-size: 13px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0;padding:0;word-spacing:normal;background-color:#000000;">
+    <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin-bottom: 25px;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width:100%;border:none;border-spacing:0;">
+        <tr>
+            <td align="center" style="padding:0;">
+            <!--[if mso]>
+            <table role="presentation" align="center" style="width:600px;">
+            <tr>
+            <td>
+            <![endif]-->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#000000;">
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td id="templateHeader" data-template-container>
+                                    <div class="templateHeader__logo" style="text-align: right;display: block;padding-bottom: 245px;"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/da0955bc-2d88-699d-9c57-8601a90bec2d.png" width="156" alt="" style="max-height: 28px;" mc:label="banner_logo" mc:edit="banner_logo"></div>
+                                    <a class="templateHeader__main-logo" href="https://djayslim.com/" style="text-decoration:none;display: inline-block;"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/2d08d9e2-50c0-4a83-05a4-14ad2797b307.png" width="332" alt="Logo" style="max-height:72px;" mc:label="site_logo" mc:edit="site_logo"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="date-banner">
+                            <tr>
+                                <td valign="middle" class="date-banner__1" style="padding:30px 20px 30px 40px;font-size:13px;line-height:13px;font-weight:bold;background-color:#000000;" mc:label="banner_site_link" mc:edit="banner_site_link">
+                                    <a href="https://djayslim.com/" style="color:#dfa323;text-decoration:none;outline: none;">WWW.DJAYSLIM.COM</a>
+                                </td>
+                                <td valign="middle" class="date-banner__2" style="padding:30px 40px 30px 20px;font-size:13px;line-height:13px;font-weight:bold;text-align:right;background-color:#000;color: #fff;" mc:label="banner_date" mc:edit="banner_date"><div>NEWSLETTER AUGUST 2023</div></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr mc:hideable>
+                    <td valign="top" id="intro-text" style="padding:60px 40px 1px;font-size:16px;line-height:20px;font-weight:normal;background-color: #fff;" mc:label="intro_text" mc:edit="intro_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </td>
+                </tr>
+                <tr mc:hideable>
+                    <td id="upcoming-shows" style="padding:50px 40px 1px;background-color:#ffffff;" valign="top" align="center">
+                        <div style="text-align: center;padding-bottom: 20px;"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/c13847dc-41f3-3741-6e22-efa633191860.png" width="520" alt="" style="max-height: 30px;" mc:label="events_heading" mc:edit="events_heading"></div>
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="upcoming-shows__lists" style="font-size: 15px;line-height: 19px; font-weight: bold;">
+                            <tr mc:repeatable mc:variant="Show 1">
+                                <td valign="middle" align="left" style="width: 56px;padding: 20px 15px 20px 3px;" mc:label="event_date" mc:edit="event_date">17 June</td>
+                                <td valign="middle" align="left" style="width: 137px;padding: 20px 15px 20px 15px;" mc:label="event_title" mc:edit="event_title">Bad Boys Love - Mahaba</td>
+                                <td valign="middle" align="left" style="width: 118px;padding: 20px 25px 20px 15px;font-weight: normal;" mc:label="event_vanue" mc:edit="event_vanue">Parliament (OAK)</td>
+                                <td valign="middle" align="right" style="width: 116px; padding: 20px 3px 20px 0;text-align: center;"  mc:label="event_button" mc:edit="event_button"><a href="#" style="background-color: #dfa223;color: #000; font-size: 14px;line-height: 18px;font-weight: bold; border-radius: 50px;padding: 11px 13px;text-decoration: none;outline: none;display: block;">Buy Tickets</a></td>
+                            </tr>
+                            <tr mc:repeatable mc:variant="Show 2">
+                                <td valign="middle" align="left" style="width: 56px;padding: 20px 15px 20px 3px;">18 June</td>
+                                <td valign="middle" align="left" style="width: 137px;padding: 20px 15px 20px 15px;">Sundaze</td>
+                                <td valign="middle" align="left" style="width: 118px;padding: 20px 25px 20px 15px;font-weight: normal;">Parliament (OAK)</td>
+                                <td valign="middle" align="right" style="width: 116px; padding: 20px 3px 20px 0;text-align: center;"><a href="#" style="background-color: #dfa223;color: #000; font-size: 14px;line-height: 18px;font-weight: bold; border-radius: 50px;padding: 11px 13px;text-decoration: none;outline: none;display: block;">Buy Tickets</a></td>
+                            </tr>
+                            <tr mc:repeatable mc:variant="Show 3">
+                                <td valign="middle" align="left" style="width: 56px;padding: 20px 15px 20px 3px;">22 June</td>
+                                <td valign="middle" align="left" style="width: 137px;padding: 20px 15px 20px 15px;">Afrobeats Fridays - LA7’s</td>
+                                <td valign="middle" align="left" style="width: 118px;padding: 20px 25px 20px 15px;font-weight: normal;">Kultur Lounge</td>
+                                <td valign="middle" align="right" style="width: 116px; padding: 20px 3px 20px 0;text-align: center;"><a href="#" style="background-color: #dfa223;color: #000; font-size: 14px;line-height: 18px;font-weight: bold; border-radius: 50px;padding: 11px 13px;text-decoration: none;outline: none;display: block;">Buy Tickets</a></td>
+                            </tr>
+                            <tr mc:repeatable mc:variant="Show 4">
+                                <td valign="middle" align="left" style="width: 56px;padding: 20px 15px 20px 3px;">24 June</td>
+                                <td valign="middle" align="left" style="width: 137px;padding: 20px 15px 20px 15px;">Day Party LA7’s</td>
+                                <td valign="middle" align="left" style="width: 118px;padding: 20px 25px 20px 15px;font-weight: normal;">Harbour House</td>
+                                <td valign="middle" align="right" style="width: 116px; padding: 20px 3px 20px 0;text-align: center;"><a href="#" style="background-color: #dfa223;color: #000; font-size: 14px;line-height: 18px;font-weight: bold; border-radius: 50px;padding: 11px 13px;text-decoration: none;outline: none;display: block;">Buy Tickets</a></td>
+                            </tr>
+                            <tr mc:repeatable mc:variant="Show 5">
+                                <td valign="middle" align="left" style="width: 56px;padding: 20px 15px 20px 3px;">29 June</td>
+                                <td valign="middle" align="left" style="width: 137px;padding: 20px 15px 20px 15px;">Mondial Afrique</td>
+                                <td valign="middle" align="left" style="width: 118px;padding: 20px 25px 20px 15px;font-weight: normal;">AU Lounge</td>
+                                <td valign="middle" align="right" style="width: 116px; padding: 20px 3px 20px 0;text-align: center;"><a href="#" style="background-color: #dfa223;color: #000; font-size: 14px;line-height: 18px;font-weight: bold; border-radius: 50px;padding: 11px 13px;text-decoration: none;outline: none;display: block;">Buy Tickets</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="mixes" style="padding:40px 40px 50px;background-color:#ffffff;" valign="top" align="center">
+                        <div class="mix-heading" style="text-align: center;padding-bottom: 25px;"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/82f2c7eb-95a7-7e01-7a6b-033fc0376d66.png" width="355" alt="" style="max-height: 30px;" mc:label="mixes_heading" mc:edit="mixes_heading"></div>
+
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="mixes__items" style="font-size: 15px;line-height: 19px; font-weight: bold;color: #000;">
+                            <tr mc:repeatable mc:variant="Mixes 1">
+                                <td valign="top" align="left" style="padding: 0 11px 0 0;"  width="50%">
+                                    <img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/b119ad9c-d01c-f1d2-298e-b0245c6a9513.jpg" width="100%" alt="" mc:label="mixes_thumbnail1" mc:edit="mixes_thumbnail1">
+                                    <h3 style="font-size: 15px;line-height: 19px;font-weight: bold;color: #000;margin: 0;padding: 18px 0 25px;" mc:label="mixes_title1" mc:edit="mixes_title1">Live Prom Mix (A Bayarea High School)</h3>
+                                </td>
+                                <td valign="top" align="left" style="padding: 0 0 0 11px;"  width="50%">
+                                    <img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/f74313f1-5b3d-484c-77af-59ae2d5e2867.jpg" width="100%" alt="" mc:label="mixes_thumbnail2" mc:edit="mixes_thumbnail2">
+                                    <h3 style="font-size: 15px;line-height: 19px;font-weight: bold;color: #000;margin: 0;padding: 18px 0 25px;" mc:label="mixes_title2" mc:edit="mixes_title2">Trends | Twerks | HipHop</h3>
+                                </td>
+                            </tr>
+                            <tr mc:repeatable mc:variant="Mixes 2">
+                                <td valign="top" align="left" style="padding: 0 11px 0 0;"  width="50%">
+                                    <img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/cf0914ee-db71-a168-4b68-4e4084266120.jpg" width="100%" alt="" mc:label="mixes_thumbnail3" mc:edit="mixes_thumbnail3">
+                                    <h3 style="font-size: 15px;line-height: 19px;font-weight: bold;color: #000;margin: 0;padding: 18px 0 25px;" mc:label="mixes_title3" mc:edit="mixes_title3">Live Prom Mix (A Bayarea High School)</h3>
+                                </td>
+                                <td valign="top" align="left" style="padding: 0 0 0 11px;" width="50%">
+                                    <img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/cc246307-06f9-137b-3e17-05df3b58fbc0.jpg" width="100%" alt="" mc:label="mixes_thumbnail" mc:edit="mixes_thumbnail4">
+                                    <h3 style="font-size: 15px;line-height: 19px;font-weight: bold;color: #000;margin: 0;padding: 18px 0 25px;" mc:label="mixes_title4" mc:edit="mixes_title4">Trends | Twerks | HipHop</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="footer" style="padding:35px 40px 80px;text-align:center;border-top: 3px solid #000;" background="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/03c2add6-a668-2f3e-25bf-e5fa1fca58df.png">
+                        <div class="footer_social" mc:label="footer_social" mc:edit="footer_social">
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_1"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/b6008051-3f39-e13b-06c3-0a897266e2bf.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_2"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/d02abf4e-836e-f92f-a602-dae3870dea20.png" height="22" alt="t"></a>
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_3"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/47bd80ca-6315-8274-c373-bd390a0c0abc.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_4"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/3fd4cc5f-4e7d-d2cd-268c-9f4f670c38c3.png" height="22" alt="t"></a>
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_5"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/910cc725-80b7-1eae-baae-a945aac9a8b7.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_6"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/69d61ad7-d2ae-e6fc-210e-cdba3ab01858.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_7"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/660d4dc8-09ec-a7cd-9b83-09679205c28a.png" height="22" alt="t"></a>
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_8"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/bea65c34-8edc-91f0-4f2f-8c982ff522c2.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_9"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/9323aa37-d1f2-5fd9-1b83-f9a4922b77e0.png" height="22" alt="t"></a>
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_10"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/e17b3ac2-f1e1-b920-2a0b-fa9247a60263.png" height="22" alt="f"></a> 
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_11"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/fed312cb-4c84-285a-0b88-9a7a83a76a02.png" height="22" alt="t"></a>
+                            <a href="#" style="text-decoration:none;display: inline-block;" mc:repeatable mc:variant="social_12"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/439bca44-6a50-e816-66c0-d94cbbb5db10.png" height="22" alt="t"></a>
+                        </div>
+
+                        <div class="footer_text" style="font-size:12px;line-height:18px;color: #fff;padding-top: 35px;" mc:label="footer_text" mc:edit="footer_text">
+                            <p style="margin: 0 0 7px;">Copyright ©️ 2023 Djay Slim. All Rights Reserved.</p>
+                            <p style="margin: 0;">Want to change how you receive these emails?</p>
+                            <p style="margin: 0;">You can <a href="#" style="color:#e0a324;text-decoration:underline;">update your preferences</a> or <a class="unsub" href="#" style="color:#e0a324;text-decoration:underline;">unsubscribe from this list.</a></p>
+                        </div>
+
+                        <div class="footer_logo" style="max-width: 160px;margin: 40px auto 0;" mc:label="footer_logo" mc:edit="footer_logo">
+                            <a href="https://djayslim.com/"><img src="https://mcusercontent.com/d780cb3a9f21267f77b0864cb/images/2d08d9e2-50c0-4a83-05a4-14ad2797b307.png" width="125" alt="" style="max-height:28px;display: block;margin: 0 auto;"></a>
+                            <a style="font-size: 15px;line-height: 19px;color:#e0a324;font-weight: bold;margin-top: 10px;display: block;text-decoration: none;" href="https://djayslim.com/">WWW.DJAYSLIM.COM</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>
